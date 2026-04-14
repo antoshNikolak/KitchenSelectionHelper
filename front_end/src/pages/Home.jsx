@@ -2,16 +2,13 @@ import { Link } from 'react-router-dom';
 
 const highlights = [
   {
-    title: 'Guided flow',
-    description: 'Move from customer details to quote output in minutes.',
+    title: 'Hidden cost breakdown',
+    description:
+      'Break down materials, labour, electrics, and plumbing clearly.',
   },
   {
-    title: 'Clear pricing',
-    description: 'Present estimates in a clean, customer-friendly format.',
-  },
-  {
-    title: 'Ready to grow',
-    description: 'Designed as a solid base for your full quoting workflow.',
+    title: 'Customer clarity',
+    description: 'Help users understand what’s included vs extra costs.',
   },
 ];
 
@@ -23,16 +20,16 @@ export default function Home() {
 
         <div className="relative z-10">
           <p className="mb-5 inline-block rounded-full border border-sky-300/35 bg-sky-400/12 px-3.5 py-2 text-[13px] uppercase tracking-[0.08em] text-sky-200">
-            Fast • Simple • Professional
+            Hidden cost estimator • UK kitchen projects
           </p>
 
           <h1 className="max-w-4xl text-[clamp(2.8rem,6vw,4.8rem)] leading-[1.02] font-semibold text-white">
-            Kitchen Quote Builder
+            Kitchen Hidden Cost Calculator
           </h1>
 
           <p className="mt-5 max-w-160 text-[1.1rem] leading-[1.8] text-slate-200/82">
-            Create clear kitchen quotes faster, guide customers through the next
-            steps, and keep your pricing flow easy to understand.
+            Estimate the true cost of a kitchen project by breaking down
+            materials, installation, plumbing, electrics, and unexpected extras.
           </p>
 
           <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row sm:flex-wrap">
@@ -40,14 +37,9 @@ export default function Home() {
               to="/quote"
               className="inline-flex min-w-42.5 items-center justify-center rounded-[14px] bg-linear-to-br from-sky-300 to-sky-400 px-5.5 py-3.5 font-bold text-slate-950 shadow-[0_12px_24px_rgba(56,189,248,0.28)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_28px_rgba(56,189,248,0.34)]"
             >
-              Start a quote
+              Calculate hidden costs
             </Link>
-            <Link
-              to="/results"
-              className="inline-flex min-w-42.5 items-center justify-center rounded-[14px] border border-slate-200/28 bg-white/6 px-5.5 py-3.5 font-bold text-slate-50 transition duration-200 hover:-translate-y-0.5 hover:border-slate-200/55 hover:bg-white/10"
-            >
-              View results
-            </Link>
+
           </div>
 
           <div className="mt-10 grid gap-4.5 md:grid-cols-3">
@@ -56,7 +48,9 @@ export default function Home() {
                 key={highlight.title}
                 className="flex flex-col gap-2.5 rounded-[20px] border border-white/8 bg-white/5 p-5.5"
               >
-                <strong className="text-base text-white">{highlight.title}</strong>
+                <strong className="text-base text-white">
+                  {highlight.title}
+                </strong>
                 <span className="leading-6 text-slate-200/78">
                   {highlight.description}
                 </span>

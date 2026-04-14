@@ -7,7 +7,7 @@ builder.Services.AddSwaggerGen();
 
 const string FrontendCorsPolicy = "FrontendCors";
 var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
-c
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(FrontendCorsPolicy, policy =>
