@@ -23,9 +23,4 @@ npm run dev
 
 Open the URL printed by Vite (typically `http://localhost:5173`).
 
-## Notes
-
-- Frontend calls `GET /api/customers`.
-- In development, Vite proxies `/api` to `BACKEND_URL` from `.env`.
-- Default backend URL is `http://localhost:5238`.
 
