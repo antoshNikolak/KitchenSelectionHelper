@@ -16,7 +16,7 @@ public class QuoteCalculator
         {
             var applianceWiring = request.TotalAppliances.GetValueOrDefault() * 300m;
             var sockets = request.Sockets.GetValueOrDefault() * 150m;
-            var plumbing = request.HasDishwasher.GetValueOrDefault() == true ? 120m : 0m;
+            var plumbing = request.HasDishwasher.GetValueOrDefault() == true ? 230m : 110m;
             var installation = request.KitchenSize * 250m;
 
             expenses.Add("Appliance wiring", Math.Round(applianceWiring, 2));
