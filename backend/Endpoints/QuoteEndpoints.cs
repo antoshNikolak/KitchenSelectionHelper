@@ -7,7 +7,8 @@ public static class QuoteEndpoints
             .WithOpenApi();
     }
 
-    private static IResult CalculateQuote(QuoteRequest request){
+    private static IResult CalculateQuote(QuoteRequest request)
+    {
         QuoteCalculator quoteCalculator = new QuoteCalculator();
         var expenses = quoteCalculator.Calculate(request);
         return Results.Ok(expenses);
